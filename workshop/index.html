@@ -19,11 +19,11 @@
   }
 </style>
 <body>
-<header class="container-fluid bg-4 text-center"> 
+<header class="container-fluid bg-4 text-center headd">
               <div class="footer-content text-center">
                     <span class="logo">
-                            <a href="../index.html"><img src="../logo.png"/></a><br \><br \>
-                            <button class="col-2 btn home btn-info" onclick="location.href='../index.html'">Home</button>
+                            <!--<a href="../index.html"><img src="../img/logo_bmw.jpg" width="40px"></a><br \><br \>-->
+                            <button class="col-2 btn home btn-info work" onclick="location.href='../index.html'">Home</button>
                         </span>
             </div>
 
@@ -31,29 +31,58 @@
 <hr class="primary header">
 <h2 class='glows text-center'>WORKSHOP</h2>
 <hr class="primary">
-<div class="text-center well .col-sm-4"><h2 class="glows">BMW 5 series CAR ASSEMBLY WORKSHOP</h2><a href="../register/index.html"><img src="../img/bmw.jpg" class="img-thumbnail mx-auto d-block" alt="Responsive image" width="400px" height="400px"></a>
-<h4 class="text-center"><a href="../register/index.html">Click here to register</a></h4>
-<h3 class="text-center">Pay Rs.1250</h3></div><hr>
-<div class=" container">
+<div class="text-center well .col-sm-4"><h2 class="glows">BMW 525i HIGH END MODEL CAR ASSEMBLY WORKSHOP</h2><a href="http://tyrospace.com/BMW-525i-High-end-model-assembly-workshop-1828264902"><img src="../img/bmw.png" class="img-thumbnail mx-auto d-block" alt="Responsive image" width="400px" height="400px"></a>
+<h4 class="text-center"><a href="http://tyrospace.com/BMW-525i-High-end-model-assembly-workshop-1828264902">Click here to register</a></h4>
+
+<ul class="tab">
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'London')">Introduction</a></li>
+  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Paris')">Highlights</a></li>
+    <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'content')">Contact</a></li>
+  <li><a href="http://tyrospace.com/BMW-525i-High-end-model-assembly-workshop-1828264902" class="tablinks" onclick="openCity(event, 'Tokyo')">Register</a></li>
+</ul>
+
+<div id="London" class="tabcontent">
+<div class=" container cont">
+<div class="one">
+<u><h2 class="text-center glows">WORKSHOP Description</h2></u>
 <h4>You are capable of accomplishing more than you know and stronger than what you think. You have to believe that, race the rain, ride the wind and chase the sunset.</h4>
 <h4>It’s there in all our DNA, and we all have that one thing in common which drives us crazy – passion for Cars. The elegant beast by design, the delight for our hearing as the engine roars, with energetic palms on the steer and legs on the accelerator, towards the excitement for dynamism in the speedometer, is all that we motorist need to throttle our pulse. No feeling on earth can ever match with that of a one fulfilled drive piercing the strong winds. But have you taken a moment to think beyond the pleasure out of your passion in speeding up? Have you ever realized the phenomena associated with parts and structure? Don’t be puzzled much, we have a forum to meet your passion cum knowledge. It’s neither simple nor a mysterious algebra, come to witness for live the BMW 5 series Car Assembly workshop, in order to get the maximum out of it.</h4>
 <h4>We are hosting a one day workshop, which is aimed at delivering the technical approach of BWM’s       5 series car and its practical hands-on car assembly session especially for the ardent and passionate seekers. A day to learn the theories, strategies adherence for the souls living on the edge of their seats, is not an unworthy day at all to be skipped. </h4>
 <h4>This workshop is going to be a one-stop-shop which connects the intelligent learners on the field of engineering, to shape an innovative future in the world of Automotive. This is a platform to discover yourself, get inspired to spark multi stroke engine<b> BMW S85 V10 engine </b>of our BMW’s 5 series car.</h4>
 <h4>People say, Creativity is seeing what everyone else has seen and thinking what no else has thought. Take your chance, to make the choice and explore the change! See you soon at the Mission of Creating the Ultimate Driving Machine!</h4>
-<h3>Highlights of the Workshop </h3>
-<ul>
-<li>Practical hands-on sessions in each and every concept of BMW car.</li>
 
-<li>Work on live BMW 525i series equipments.</li>
-
-<li>Certificates will be provided.</li>
-
-<li>Interactive theory session with professionals.</li>
-</ul>
-<h3>Who can participate?</h3>
-<h4>Engineering students of any branch</h4>
+</div>
+</div>
 </div>
 
+<div id="Paris" class="tabcontent">
+<div class=" container cont">
+<div class="one">
+<u><h2 class="text-center glows">Highlights</h2></u>
+<h4>Practical hands-on sessions in each and every concept of BMW car.</h4>
+<h4>Work on live BMW 525i series equipments.</h4>
+<h4>Certificates will be provided.</h4>
+<h4>Interactive theory session with professionals.</h4>
+</div>
+</div>
+
+
+</div>
+
+<div id="content" class="tabcontent">
+<div class=" container cont">
+<div class="one">
+<u><h2 class="text-center glows">Contact</h2></u>
+<h4>Prijitha: 9789811409</h4>
+<h4>Sakthivel: 9790455363</h4>
+<h4>Prathik sharan: 9940088834</h4>
+</div>
+</div>
+</div>
+
+
+
+</div>
 
 <hr class="primary bottom">
 <footer class="container-fluid bg-4 text-center"> 
@@ -69,27 +98,24 @@
     <script src="assets/jquery-1.11.2.min.js"></script>
     <script src="assets/jquery.validate.min.js"></script>
     <script src="assets/register.js"></script>
-    <script type="text/javascript">
-      $(function() {
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
 
-    $('#login-form-link').click(function(e) {
-      $("#login-form").delay(100).fadeIn(100);
-    $("#register-form").fadeOut(100);
-    $('#register-form-link').removeClass('active');
-    $(this).addClass('active');
-    e.preventDefault();
-  });
-  $('#register-form-link').click(function(e) {
-    $("#register-form").delay(100).fadeIn(100);
-    $("#login-form").fadeOut(100);
-    $('#login-form-link').removeClass('active');
-    $(this).addClass('active');
-    e.preventDefault();
-  });
-
-});
-
-    </script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 
 </body>
 </html>

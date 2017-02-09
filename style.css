@@ -1,3 +1,80 @@
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #f1f1f1;
+    list-style: none;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    }
+
+
+body{
+  font-family: verdana;
+}
+
+
+
+
+
+
+
+
+
+.cont{
+  width:75%;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cont .one{
+  padding:20px;
+}
+.cont h4,ul li{
+  line-height: 30px;
+}
+.headd{
+  background-image: url("img/logo_bmw.jpg");
+
+}
+.logo .work{
+  margin-top:250px; 
+}
+
+ul li{
+  font-size: 20px;
+}
 .mar{
 padding:40px 0 40px 0;
 }
@@ -20,7 +97,7 @@ h2{
     display: block;
 }
 hr.primary {
-    border-top: 6px solid #f89406;
+    border-top: 6px solid #337ab7;
         max-width: 100px;
     margin: 25px auto;
     border-bottom: none;
@@ -67,10 +144,18 @@ hr.header{
 .reg{
   margin:10px 0 0 0;
 }
+.logo img{
+  height:auto;
+  width:80%;
+}
+.cont{
+  width:90%;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 }
 @media screen and (min-width: 600px){
 		.logo img{
-	width:50%;
+	width:30%;
 	height:auto;
 
 }
@@ -82,7 +167,7 @@ hr.header{
 
 .btn-lg{
 	    padding: 15px;
-    margin:0 5px 10px 5px;
+    margin:30px 5px 10px 5px;
     display: inline-block;
     float: left;
     background-color: #eee;
@@ -95,11 +180,10 @@ hr.header{
 }
 
 header{
-	height:400px;
+	height:350px;
 }
 
 .logo img{
 	height:auto;
-	max-width:100%;
 	margin-top:30px;
 }
