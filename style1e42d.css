@@ -170,10 +170,10 @@ html{
 
     @keyframes tech_rock {
 	    0% {
-	        transform: translateY(0px);  
+	        transform: rotate(-10deg); 
 	    }
 	    100% {
-	        transform: translateY(8px);
+	        transform: rotate(10deg);
 	    }           
 	}
    .tech_rock{
