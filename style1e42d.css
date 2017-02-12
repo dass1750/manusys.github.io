@@ -6,7 +6,7 @@ html{
 	position: absolute;
 	  }
 	  body{
-    background-image: url(img/bg.jpg);
+    background-image: url(img/img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -184,6 +184,7 @@ html{
 	    	  	z-index: 2;
 
 	}
+
 	.cloud7{
 		animation-duration: 150s!important;
 	}
