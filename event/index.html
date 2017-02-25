@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="assets/signup-form.css" type="text/css" />
   <link rel="stylesheet" href="../style.css"> 
   <link rel="stylesheet" href="style.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <style>
 
@@ -23,7 +25,10 @@ div.polaroid {
   float:left;
   display:block;
 }
-
+div.polaroid h4{
+  font-size:20px;
+  color:blue;
+}
 div.containers {
   text-align: center;
   padding: 10px 20px;
@@ -32,6 +37,33 @@ div.containers {
   width:90%;
   margin:auto;
   position:relative;
+}
+
+@media screen and (max-width: 600px){
+  div.polaroid{
+    width:90%;
+  }
+}
+.modal .modal-header{
+  color:white;
+  background-color:#a94442;
+  text-align: center;
+
+}
+.modal .modal-header h4{
+  font-size:25px;
+}
+.modal .modal-footer{
+  color:white;
+  background-color:#a94442;
+
+}
+.modal .modal-body{
+  color:white;
+  background-color:#286090;
+}
+.modal .modal-body h4{
+  font-size:20px;
 }
 </style>
 </head>
@@ -50,93 +82,313 @@ div.containers {
 
 <h2 class='glows text-center'>EVENTS</h2>
 <hr class="primary">
-<!--div class="row event">
+<div class="row event">
+<a href="" data-toggle="modal" data-target="#myModal1">
 <div class="polaroid">
-  <img src="../img/bmw.png" alt="Norway" style="width:100%">
+  <img src="img/1.jpg" alt="Norway" style="width:100%">
   <div class="containers">
-    <p>The Troll's tongue in Hardanger, Norway</p>
+    <h4>Biz Warriors</h4>
   </div>
 </div>
+</a>
 
+<a href="" data-toggle="modal" data-target="#myModal2">
 <div class="polaroid">
-  <img src="../img/bmw.png" alt="Norway" style="width:100%">
+  <img src="img/2.jpg" alt="Norway" style="width:100%">
   <div class="containers">
-    <p>Northern Lights in Norway</p>
+    <h4>Brain Twisters</h4>
   </div>
 </div>
+</a>
 
+<a href="" data-toggle="modal" data-target="#myModal3">
 <div class="polaroid">
-  <img src="../img/bmw.png" alt="Norway" style="width:100%">
+  <img src="img/3.jpg" alt="Norway" style="width:100%">
   <div class="containers">
-    <p>The Troll's tongue in Hardanger, Norway</p>
+    <h4>Connections</h4>
   </div>
 </div>
+</a>
 
+<a href="" data-toggle="modal" data-target="#myModal4">
 <div class="polaroid">
-  <img src="../img/bmw.png" alt="Norway" style="width:100%">
+  <img src="img/4.jpg" alt="Norway" style="width:100%">
   <div class="containers">
-    <p>Northern Lights in Norway</p>
+    <h4>Crisis Management</h4>
   </div>
 </div>
+</a>
+
 </div>
 <div class="row event">
 
+<a href="" data-toggle="modal" data-target="#myModal5">
 <div class="polaroid">
-  <img src="../img/bmw.png" alt="Norway" style="width:100%">
+  <img src="img/5.jpg" alt="Norway" style="width:100%">
   <div class="containers">
-    <p>The Troll's tongue in Hardanger, Norway</p>
+    <h4>Game Zeal</h4>
   </div>
 </div>
+</a>
 
+<a href="" data-toggle="modal" data-target="#myModal6">
 <div class="polaroid">
-  <img src="../img/bmw.png" alt="Norway" style="width:100%">
+  <img src="img/6.jpg" alt="Norway" style="width:100%">
   <div class="containers">
-    <p>Northern Lights in Norway</p>
+    <h4>UPSC quiz</h4>
   </div>
 </div>
+</a>
 
+<a href="" data-toggle="modal" data-target="#myModal7">
 <div class="polaroid">
-  <img src="../img/bmw.png" alt="Norway" style="width:100%">
+  <img src="img/7.jpg" alt="Norway" style="width:100%">
   <div class="containers">
-    <p>The Troll's tongue in Hardanger, Norway</p>
+    <h4>How Stuff Works</h4>
   </div>
 </div>
+</a>
 
+<a href="" data-toggle="modal" data-target="#myModal8">
 <div class="polaroid">
-  <img src="../img/bmw.png" alt="Norway" style="width:100%">
+  <img src="img/8.jpg" alt="Norway" style="width:100%">
   <div class="containers">
-    <p>Northern Lights in Norway</p>
+    <h4>Innovate</h4>
   </div>
   </div>
+</a>
+
+
 </div>
 
 <div class="row event">
 
+<a href="" data-toggle="modal" data-target="#myModal9">
 <div class="polaroid">
-  <img src="../img/bmw.png" alt="Norway" style="width:100%">
+  <img src="img/9.jpg" alt="Norway" style="width:100%">
   <div class="containers">
-    <p>The Troll's tongue in Hardanger, Norway</p>
+    <h4>Sold Out</h4>
+  </div>
+</div>
+</a>
+
+<a href="" data-toggle="modal" data-target="#myModal10">
+<div class="polaroid">
+  <img src="img/10.jpg" alt="Norway" style="width:100%">
+  <div class="containers">
+    <h4>Spent Quiz</h4>
+  </div>
+</div>
+</a>
+
+
+
+</div>
+</div>
+
+
+
+<div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Biz Warriors</h4>
+        </div>
+        <div class="modal-body">
+          <h4>Introduction</h4>
+          <p>Load your guns with science bullets. March your cavalry to the rhythm of the facts. Prepare your glitz attack on the quiz buzzer. Get ready for the battle of wits. Bizz wars are here. Do you dig deep into the sciences of this world?  Then come participate in Bizz wars, our science quiz and stand to win attractive cash prizes.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="polaroid">
-  <img src="../img/bmw.png" alt="Norway" style="width:100%">
-  <div class="containers">
-    <p>Northern Lights in Norway</p>
+
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Brain Twisters</h4>
+        </div>
+        <div class="modal-body">
+        <h4>Introduction</h4>
+          <p>Are you good with puzzles, riddles and logic problems? Get ready to squeeze your brain juices to solve the problems we give you in Brain twister. Challenge yourself and otherwise in this intriguing event. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 
 
+<div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Connections</h4>
+        </div>
+        <div class="modal-body">
+        <h4>Introduction</h4>
+          <p>Ever saw connections on TV and realised you got all the answers right? Here, we provide you to try your hand at the real thing. So buck up and get ready to relate. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div-->
+
+<div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Crisis Management</h4>
+        </div>
+        <div class="modal-body">
+          <p>COMING SOON...</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Game Zeal</h4>
+        </div>
+        <div class="modal-body">
+        <h4>Introduction</h4>
+          <p>Crazed about minimilitia?  Do you and your friends end up playing for hours? Then, game zeal is the event for you. A minimilitia tournament that lets all you game buffs run free. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal6" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">UPSC quiz</h4>
+        </div>
+        <div class="modal-body">
+        <h4>Introduction</h4>
+          <p>Aspiring to be a government administrator? Buy yourself the daily news paper and flock to the UPSC quiz. The heated quiz will leave you on the edge of your seat- much like the state of the current administration….</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal7" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">How Stuff Works</h4>
+        </div>
+        <div class="modal-body">
+        <h4>Introduction</h4>
+          <p>Do you often find yourself questioning the workings of the world? Do your friends constantly ask you their queries and doubts? Well, lubricate your neurons, fire up your thoughts and let your brain race. How stuff works is your quiz track, and the quiz master is your waving flag. Participate in our general quiz and tear down the finish line.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal8" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Innovate</h4>
+        </div>
+        <div class="modal-body">
+        <h4>Introduction</h4>
+          <p>Put your thinking caps on, INNOVATE is here. Find new world solutions to real time problems. Use the bare minimum to create greatness. Mould waste materials into a productive design for the world. Innovate – to let your creativity flow. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal9" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sold Out</h4>
+        </div>
+        <div class="modal-body">
+        <h4>Introduction</h4>
+          <p>Mad about cricket? Do you relentlessly watch every test match, 20-20 and world cup? Can you quote ball by ball, run by run the best moments in cricket history? Then toss your coin and come score a century with us in SOLD- a cricket quiz. You might just be the man of the match. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal10" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Spent Quiz</h4>
+        </div>
+        <div class="modal-body">
+        <h4>Introduction</h4>
+          <p>Your parents ever tell you sports and entertainment would never fetch anything good? Well, time to prove them wrong! Participate in SPENT- a sports and entertainment quiz, and stand to win attractive prizes.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 <hr class="primary bottom">
 <footer class="container-fluid bg-4 text-center"> 
               <div class="footer-content">
                     <p>Privacy Policy</p>
                     <p>Copyright © Manusys 2017.</p>
-                    <p>All rights are reserved.</p>
+                    <p>All rights reserved.</p>
                     
             </div>
 
